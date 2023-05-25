@@ -1,0 +1,102 @@
+// --------------------------------------------------------------------------
+// --- You can add your custom CSS here and it will overwrite template styles.
+// --------------------------------------------------------------------------
+
+.k-product {
+	padding: 1.125rem;
+	width: 100%;
+	position: relative;
+	transition: box-shadow 0.5s ease;
+	&:hover {
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	}
+
+	&__img-container {
+		margin-bottom: 1rem;
+	}
+
+	&__figure {
+		margin-bottom: 0 !important;
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			.product-image__img {
+				opacity: 0;
+				transform: scale(1.15);
+				&.first {
+					opacity: 1;
+				}
+			}
+			.k-product__actions {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	.product-image__img {
+		transform: scale(1);
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		&.first {
+			opacity: 0;
+		}
+	}
+
+	.k-product__actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		transform: translateY(50%);
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		svg,
+		path {
+			fill: #3d464d !important;
+			color: #3d464d !important;
+		}
+	}
+
+	// info item here
+
+	&__info {
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 0.5rem;
+		a {
+			font-size: 1.025rem;
+			font-weight: 500;
+
+			color: rgba(#333, 1) !important;
+			opacity: 1;
+		}
+	}
+
+	&__rating {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0.5rem;
+		.review {
+			font-size: 0.75rem;
+			color: gray;
+			margin-inline-start: 0.5rem;
+		}
+	}
+
+	&__price {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+}
