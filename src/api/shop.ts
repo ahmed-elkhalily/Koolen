@@ -43,7 +43,7 @@ export type GetSuggestionsOptions = {
 	category?: string;
 };
 
-const baseUrl = "https://koolen.shaha.com.sa";
+const baseUrl = "https://koolen.shaha.com.sa/public";
 
 /**
  * @param context Can be used, for example, to access the axios plugin.
@@ -66,11 +66,12 @@ function make(context: Context) {
 			 */
 			// return fetch(`${baseUrl}/api/categories.json?${qs.stringify(options)}`)
 			//     .then((response) => response.json());
-			// return fetch(`${baseUrl}/api/v1/all-categories`).then((response) =>
-			// 	response.json()
-			// );
+			const data = fetch(`${baseUrl}/api/v1/all-categories`).then((response) =>
+				response.json()
+			);
+			return data;
 			// This is for demonstration purposes only. Remove it and use the code above.
-			return getCategories(options);
+			// return getCategories(options);
 		},
 		/**
 		 * Returns category by slug.

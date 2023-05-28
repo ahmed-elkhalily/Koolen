@@ -37,9 +37,6 @@
 							<div class="category-card__all">
 								<AppLink :to="$url.category(category)"> Show All </AppLink>
 							</div>
-							<div class="category-card__products">
-								{{ category.items }} Products
-							</div>
 						</div>
 					</div>
 				</div>

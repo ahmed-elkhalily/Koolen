@@ -28,6 +28,7 @@ const _48f97434 = () => interopDefault(import('../src/pages/shop/category-list.v
 const _44c2be13 = () => interopDefault(import('../src/pages/shop/category-right-sidebar.vue' /* webpackChunkName: "pages/shop/category-right-sidebar" */))
 const _cf38a180 = () => interopDefault(import('../src/pages/shop/checkout/index.vue' /* webpackChunkName: "pages/shop/checkout/index" */))
 const _63e9777e = () => interopDefault(import('../src/pages/shop/compare.vue' /* webpackChunkName: "pages/shop/compare" */))
+const _450e857a = () => interopDefault(import('../src/pages/shop/ctegories.vue' /* webpackChunkName: "pages/shop/ctegories" */))
 const _286ae848 = () => interopDefault(import('../src/pages/shop/product-columnar.vue' /* webpackChunkName: "pages/shop/product-columnar" */))
 const _42b5dcd2 = () => interopDefault(import('../src/pages/shop/product-sidebar.vue' /* webpackChunkName: "pages/shop/product-sidebar" */))
 const _f01204dc = () => interopDefault(import('../src/pages/shop/product-standard.vue' /* webpackChunkName: "pages/shop/product-standard" */))
@@ -155,6 +156,10 @@ export const routerOptions = {
     path: "/shop/compare",
     component: _63e9777e,
     name: "shop-compare"
+  }, {
+    path: "/shop/ctegories",
+    component: _450e857a,
+    name: "shop-ctegories"
   }, {
     path: "/shop/product-columnar",
     component: _286ae848,
@@ -327,6 +332,10 @@ export const routerOptions = {
     path: "/:lang/shop/compare",
     component: _63e9777e,
     name: "lang-shop-compare"
+  }, {
+    path: "/:lang/shop/ctegories",
+    component: _450e857a,
+    name: "lang-shop-ctegories"
   }, {
     path: "/:lang/shop/product-columnar",
     component: _286ae848,

@@ -168,6 +168,13 @@
     "_name": "_63e9777e"
   },
   {
+    "name": "shop-ctegories",
+    "path": "/shop/ctegories",
+    "component": "/home/backend/Documents/frontend/Projects/Koolen/src/pages/shop/ctegories.vue",
+    "chunkName": "pages/shop/ctegories",
+    "_name": "_450e857a"
+  },
+  {
     "name": "shop-product-columnar",
     "path": "/shop/product-columnar",
     "component": "/home/backend/Documents/frontend/Projects/Koolen/src/pages/shop/product-columnar.vue",
@@ -467,6 +474,13 @@
     "component": "/home/backend/Documents/frontend/Projects/Koolen/src/pages/shop/compare.vue",
     "chunkName": "pages/_lang/shop/compare",
     "_name": "_63e9777e"
+  },
+  {
+    "name": "lang-shop-ctegories",
+    "path": "/:lang/shop/ctegories",
+    "component": "/home/backend/Documents/frontend/Projects/Koolen/src/pages/shop/ctegories.vue",
+    "chunkName": "pages/_lang/shop/ctegories",
+    "_name": "_450e857a"
   },
   {
     "name": "lang-shop-product-columnar",

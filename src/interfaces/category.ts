@@ -16,8 +16,4 @@ export interface IShopCategory extends IBaseCategory {
 	type: "shop";
 }
 
-export interface IBlogCategory extends IBaseCategory {
-	type: "blog";
-}
-
-export type ICategory = IShopCategory | IBlogCategory;
+export type ICategory = IShopCategory;
